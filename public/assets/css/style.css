@@ -1,0 +1,168 @@
+:root {
+  --primary: rgb(25, 23, 37, 1);
+  --primary-dark: rgb(25, 23, 37, 1);
+  --primary-70: rgba(25, 23, 37, 0.7);
+  --primary-50: rgba(25, 23, 37, 0.5);
+  --primary-30: rgba(25, 23, 37, 0.3);
+  --primary-10: rgba(25, 23, 37, 0.1);
+  --logo: #0e0d15;
+  --sidebar-icon: #dcf206;
+}
+
+.bg-grad-sidebar {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgb(25, 23, 37, 1)),
+    to(#191725)
+  );
+
+  background-image: linear-gradient(
+    0deg,
+    rgb(25, 23, 37, 1),
+    rgb(25, 23, 37)
+  );
+}
+
+/* LOGO */
+
+#nova .bg-logo .outbuster-svg-logo {
+color:#dcf206;
+}
+
+@keyframes outbuster_logo_hideshow {
+0% {opacity:0;}
+10% {opacity:1;}
+15% {opacity:1;}
+100% {opacity:1;}
+} 
+
+#nova .bg-logo .outbuster-svg-logo {
+animation:outbuster_logo_hideshow 10s ease infinite;
+}
+
+/* MENU - TOP LEVEL */
+
+#nova .bg-logo {
+padding:0 1rem 0;
+}
+
+#nova .bg-grad-sidebar {
+padding:5.75rem 1rem 0;
+}
+
+#nova div div h3 span {
+color:#c9def0;
+font-size:.85rem;
+font-weight:800;
+letter-spacing:.005em;
+text-transform:uppercase;
+}
+
+#nova .top_level ul {
+background-color:;
+}
+
+#nova .top_level h3 div div span {
+color:#c9def0;
+font-size:.85rem;
+font-weight:800;
+letter-spacing:.005em;
+text-transform:uppercase;
+}
+
+#nova .top_level ul li {
+color:#fff;
+list-style-type:decimal;
+}
+
+#nova .top_level ul li div {
+padding:0 0 0 0.25rem;
+}
+
+#nova .top_level ul li div h4 {
+color:#fff;
+font-size:.75rem;
+font-weight:800;
+letter-spacing:.005em;
+text-transform:uppercase;
+}
+
+#nova .top_level ul li div ul {
+/*margin:0 0 0 5px;*/
+}
+
+#nova .top_level ul li div ul li {
+list-style-type:square;
+}
+
+#nova .top_level ul li div ul li div {
+padding:0 0 0 0.20rem;
+}
+
+#nova .top_level ul li div ul li div h4 {
+color:#c9def0;
+}
+
+#nova .top_level ul li div ul li div ul li {
+list-style-type:disc;
+}
+
+#nova .top_level ul li div ul li div ul li div h4 {
+color:#fff;
+}
+
+#nova .top_level ul li div ul li div ul li div ul li {
+list-style-type:circle;
+}
+
+#nova .top_level ul li div ul li a {
+color:#ebdcc3;
+font-size:.70rem;
+font-weight:600;
+letter-spacing:.005em;
+text-transform:uppercase;
+}
+
+.ml-8 {
+margin-left:1.3rem;
+}
+
+/* COLUMNS IMG */
+
+#nova .content .relative table tbody tr td p img {
+background-color:#0e0d15;
+height:inherit;
+width:2.4rem;
+}
+
+/* EDIT & VIEW IMG */
+
+#nova .content .relative form .card img {
+background-color:#0e0d15;
+}
+
+/* TABS */
+
+#nova .content .relative .relationship-tabs-panel .tab {
+padding-left:1.26rem;
+padding-right:1.26rem;
+}
+
+/* NESTED TABS */
+
+#nova .content .relative .card .nova-nested-form-with-content .card {
+border-radius:.5rem!important;
+margin:0 0 5px;
+}
+
+#nova .content .relative .card .nova-nested-form-with-content .card:last-child {
+margin:0;
+}
+
+/* MOVE NESTED BUTTONS */
+
+#nova .content .relative .tab-content > div > .relative > .flex {
+transform:translateY(-400%);
+}
