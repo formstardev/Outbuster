@@ -9,7 +9,7 @@
         <div class="banner-wrap">
             <div class="banner">
                 <div class="img-wrap"><img
-                        src="{{ isset($film->film_cover) ? asset('storage/' . $film->film_cover) : asset('assets/images/banner-img.jpg') }}"
+                        src="{{ asset('assets/images/banner-img.jpg') }}"
                         alt="banner" class="banner-image"></div>
                 <div class="banner-text">
                     <div class="small-title"> <img src="{{ asset('assets/images/small-title-logo.png') }}"
