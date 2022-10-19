@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8052605cd514c47addf611197d6e866f",
+    "content-hash": "c6cca56f88b830958835dd0939e33811",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1697,6 +1697,125 @@
             "time": "2022-08-28T14:45:39+00:00"
         },
         {
+            "name": "imagine/imagine",
+            "version": "1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-imagine/Imagine.git",
+                "reference": "ae864f26afbf8859ebd2e2b9df92d77ee175dc13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-imagine/Imagine/zipball/ae864f26afbf8859ebd2e2b9df92d77ee175dc13",
+                "reference": "ae864f26afbf8859ebd2e2b9df92d77ee175dc13",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.5 || ^8.4 || ^9.3"
+            },
+            "suggest": {
+                "ext-exif": "to read EXIF metadata",
+                "ext-gd": "to use the GD implementation",
+                "ext-gmagick": "to use the Gmagick implementation",
+                "ext-imagick": "to use the Imagick implementation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Imagine\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bulat Shakirzyanov",
+                    "email": "mallluhuct@gmail.com",
+                    "homepage": "http://avalanche123.com"
+                }
+            ],
+            "description": "Image processing for PHP 5.3",
+            "homepage": "http://imagine.readthedocs.org/",
+            "keywords": [
+                "drawing",
+                "graphics",
+                "image manipulation",
+                "image processing"
+            ],
+            "support": {
+                "issues": "https://github.com/php-imagine/Imagine/issues",
+                "source": "https://github.com/php-imagine/Imagine/tree/1.3.2"
+            },
+            "time": "2022-04-01T11:58:30+00:00"
+        },
+        {
+            "name": "ksubileau/color-thief-php",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ksubileau/color-thief-php.git",
+                "reference": "fc2acefacbd037f68cf61bcc62b30ac1bb16ed59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ksubileau/color-thief-php/zipball/fc2acefacbd037f68cf61bcc62b30ac1bb16ed59",
+                "reference": "fc2acefacbd037f68cf61bcc62b30ac1bb16ed59",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.13",
+                "phpunit/phpunit": "~4.8|~5.7"
+            },
+            "suggest": {
+                "ext-gd": "to use the GD image adapter.",
+                "ext-gmagick": "to use the Gmagick image adapter.",
+                "ext-imagick": "to use the Imagick image adapter."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ColorThief\\": "lib/ColorThief"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC-BY-2.5"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Subileau",
+                    "homepage": "http://www.kevinsubileau.fr"
+                }
+            ],
+            "description": "Grabs the dominant color or a representative color palette from an image.",
+            "homepage": "http://www.kevinsubileau.fr/projets/color-thief-php",
+            "keywords": [
+                "color",
+                "dominant",
+                "palette",
+                "php",
+                "thief"
+            ],
+            "support": {
+                "issues": "https://github.com/ksubileau/color-thief-php/issues",
+                "source": "https://github.com/ksubileau/color-thief-php/tree/master"
+            },
+            "time": "2018-10-27T18:57:38+00:00"
+        },
+        {
             "name": "laravel/cashier",
             "version": "v13.16.0",
             "source": {
@@ -1959,7 +2078,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "16e1b68b0cd5131db3e6c3c967b254ff5750eee0"
+                "reference": "d23a50b598fa7227ec755a1a9deeb05d059214cb"
             },
             "require": {
                 "brick/money": "^0.5.0",
@@ -2991,6 +3110,137 @@
             },
             "abandoned": "brick/math",
             "time": "2020-01-05T04:49:34+00:00"
+        },
+        {
+            "name": "mostafaznv/larupload",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mostafaznv/larupload.git",
+                "reference": "3d4a358e76382650066b03293dc00aaa61971694"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mostafaznv/larupload/zipball/3d4a358e76382650066b03293dc00aaa61971694",
+                "reference": "3d4a358e76382650066b03293dc00aaa61971694",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "imagine/imagine": "^1.2.4",
+                "ksubileau/color-thief-php": "^1.4",
+                "laravel/framework": "~8.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "6.*",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mostafaznv\\Larupload\\LaruploadServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mostafaznv\\Larupload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mostafaznv",
+                    "email": "mostafa.zeinivand@gmail.com"
+                }
+            ],
+            "description": "Larupload is a ORM based file uploader for laravel to upload image, video, audio and other known files.",
+            "keywords": [
+                "crop",
+                "ffmpeg",
+                "file",
+                "file manager",
+                "file system",
+                "hls",
+                "image",
+                "laravel",
+                "laravel 8",
+                "m3u8",
+                "media",
+                "mostafaznv",
+                "resize",
+                "s3",
+                "sftp",
+                "storage",
+                "stream",
+                "upload",
+                "video"
+            ],
+            "support": {
+                "docs": "https://github.com/mostafaznv/larupload/blob/master/README.md",
+                "issues": "https://github.com/mostafaznv/larupload/issues",
+                "source": "https://github.com/mostafaznv/larupload"
+            },
+            "time": "2021-09-06T17:50:38+00:00"
+        },
+        {
+            "name": "mostafaznv/nova-video",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mostafaznv/nova-video.git",
+                "reference": "88800557bb7fc1b84663d97cade88b74b75e1610"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mostafaznv/nova-video/zipball/88800557bb7fc1b84663d97cade88b74b75e1610",
+                "reference": "88800557bb7fc1b84663d97cade88b74b75e1610",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "mostafaznv/larupload": "^0.1.0",
+                "php": "^7.4|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mostafaznv\\NovaVideo\\VideoFieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mostafaznv\\NovaVideo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Video Field for Laravel Nova",
+            "keywords": [
+                "ffmpeg",
+                "hls",
+                "laravel",
+                "larupload",
+                "nova",
+                "stream",
+                "upload video",
+                "video",
+                "video field"
+            ],
+            "support": {
+                "issues": "https://github.com/mostafaznv/nova-video/issues",
+                "source": "https://github.com/mostafaznv/nova-video/tree/1.0.6"
+            },
+            "time": "2021-12-17T22:08:04+00:00"
         },
         {
             "name": "nesbot/carbon",

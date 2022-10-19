@@ -12,6 +12,8 @@ use Laravel\Nova\Fields\File;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
+use Mostafaznv\NovaVideo\Video;
+use Mostafaznv\NovaVideo\VideoMeta;
 use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Select;
@@ -304,7 +306,34 @@ class Film extends Resource
                         ->prunable()
                         ->sortable(),
                 ]),
+                Tab::make('Video', [
+                    File::make('Video', 'video_id')
+                        ->acceptedTypes('video/*')
+                        ->store(function (Request $request, $model) {
+                            $filename = $request->video_id->getClientOriginalName();
+                            $client = new \GuzzleHttp\Client();
+                            $response = $client->request('POST', 'https://video.bunnycdn.com/library/67919/videos', [
+                            'body' => '{"title":'.$filename.'}',
+                            'headers' => [
+                                'AccessKey' => '039b5e29-72a0-4f15-b4c531e4ff50-bc99-4c8d',
+                                'accept' => 'application/json',
+                                'content-type' => 'application/*+json',
+                            ],
+                            ]);
+                            $fresult = $response->getBody();
+                            var_dump($fresult);
+                            // $request->video_id->storeAs('media/film/videos', $filename, 'public');
 
+                            // return [
+                            //     'video_id' => 'media/film/videos/' . $filename,
+                            // ];
+                        })
+
+                        ->hideFromIndex()
+                        ->nullable()
+                        ->prunable()
+                        ->sortable(),
+                ]),
             ]),
 
         ];
